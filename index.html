@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
-    <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Palavra Cruzada</title>
 </head>
 
-<body>
+<body onload="criaInputs()">
     <main>
         <!-- <h1>Cruzadinha de Arquitetura computacional</h1> -->
         <section class="container_questions">
@@ -149,8 +149,8 @@
                 </div>
             </div>
         </section>
-        <section class="container_cruzadinha">
-            <div class="ipt_q1">
+        <section class="container_cruzadinha" id="cruzadinha">
+            <!-- <div class="ipt_q1">
                 <span class="labelQuestion">1°</span>
                 <input id="ipt_q1_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
                 <input id="ipt_q1_2" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
@@ -258,7 +258,7 @@
                 <input id="ipt_q2_2" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
                 <input id="ipt_q2_3" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
             </div>
-            <button class="btnVerify" onclick="Verificar()">Verificar</button>
+            <button class="btnVerify" onclick="Verificar()">Verificar</button> -->
         </section>
     </main>
 </body>
@@ -266,6 +266,54 @@
 </html>
 
 <script>
+    const rFim = [
+        "CPU",
+        "ULA",
+        "Registradores",
+        "RAM",
+        "ROM",
+        "EPROM",
+        "FLASH",
+        "Memoria-de-Massa",
+        "DMA",
+        "Chip-Select",
+        "Adress-Bus",
+        "Data-Bus",
+        "I5",
+        "I7",
+        "Dual-Core",
+        "Quad-Core",
+        "Threads",
+        "Cache"
+    ];
+
+    $(".iptQuestion").keyup(function () {
+        if (this.value.length == this.maxLength) {
+            $(this).next(".iptQuestion").focus();
+        }
+    });
+
+    $(".iptQuestion").keyup(function () {
+        if (this.value.length == this.minLength) {
+            $(this).prev(".iptQuestion").focus();
+        }
+    });
+
+    function criaInputs() {
+        for(let qst = 1; qst <= rFim.length; qst++ ){
+            cruzadinha.innerHTML += `            
+            <div class="ipt_q${qst}">
+                <span class="labelQuestion">${qst}°</span>
+            `
+            for(let qs2 = 1; qs2 <= rFim[qst].length; qs2++) { 
+                cruzadinha.innerHTML += `
+                
+                    <input id="ipt_q2_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
+                `
+            }
+        }
+        cruzadinha.innerHTML += `</div>`
+    }
     Swal.fire({
         imageUrl: 'https://media.tenor.com/Zg4IASBSaUEAAAAd/cat.gif',
         imageHeight: 200,
@@ -290,39 +338,6 @@
     no-repeat
     `
     });
-
-    $(".iptQuestion").keyup(function () {
-        if (this.value.length == this.maxLength) {
-            $(this).next(".iptQuestion").focus();
-        }
-    });
-
-    $(".iptQuestion").keyup(function () {
-        if (this.value.length == this.minLength) {
-            $(this).prev(".iptQuestion").focus();
-        }
-    });
-
-    var rFim = [
-        "CPU",
-        "ULA",
-        "Registradores",
-        "RAM",
-        "ROM",
-        "EPROM",
-        "FLASH",
-        "Memoria-de-Massa",
-        "DMA",
-        "Chip-Select",
-        "Adress-Bus",
-        "Data-Bus",
-        "I5",
-        "I7",
-        "Dual-Core",
-        "Quad-Core",
-        "Threads",
-        "Cache",
-    ];
 
     function Verificar() {
         var r = "";

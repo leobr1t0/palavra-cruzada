@@ -111,7 +111,8 @@ details[open] summary{
     height: 100vh;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 

@@ -1,372 +1,300 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Palavra Cruzada</title>
-</head>
+  </head>
 
-<body onload="criaInputs()">
+  <body onload="criaInputs()">
     <main>
-        <!-- <h1>Cruzadinha de Arquitetura computacional</h1> -->
-        <section class="container_questions">
-            <div class="questionGroup">
-                <div class="questionTitle">
-                    <span>Questões - Palavra Cruzada</span>
-                </div>
-                <div class="containerQst">
-                    <div class="questionBox">
-                        <details class="question">
-                            <summary>1° Questão</summary>
-                            <p>O cérebro dos dispositivos ou Unidade Central de Processamento
-                            </p>
-                        </details>
-                        <details class="question">
-                            <summary>2° Questão</summary>
-                            <p>É um circuito combinatório responsável pela execução de somas, subtrações e funções
-                                lógicas,
-                                em um sistema digital.
-                            </p>
-                        </details>
-                        <details class="question">
-                            <summary>3° Questão</summary>
-                            <p>São um tipo de memória com limites em termos de capacidade de
-                                armazenamento porém muito mais rápido no que se refere à
-                                velocidade de acesso aos dados.
-                            </p>
-                        </details>
-                        <details class="question">
-                            <summary>4° Questão</summary>
-                            <p>É responsável pelo armazenamento de informações necessárias
-                                para a execução de aplicativos em uso e para o funcionamento do
-                                próprio sistema operacional.
-                            </p>
-                        </details>
-                        <details class="question">
-                            <summary>5° Questão</summary>
-                            <p>É um tipo de memória que permite apenas a leitura de dados e
-                                não a escrita.
-                            </p>
-                        </details>
-                        <details class="question">
-                            <summary>6° Questão</summary>
-                            <p>
-                                Uma vez programada, pode ser apagada apenas por exposição a uma
-                                forte luz ultravioleta.
-                            </p>
-                        </details>
-                        <details class="question">
-                            <summary>7° Questão</summary>
-                            <p>
-                                É encontrada comumente em cartões de memória, Pen-Drives, PDAs e
-                                celulares.
-                            </p>
-                        </details>
-                        <details class="question">
-                            <summary>8° Questão</summary>
-                            <p>
-                                Tem como função armazenar grandes quantidades de informações.
-                            </p>
-                        </details>
-                        <details class="question">
-                            <summary>9° Questão</summary>
-                            <p>
-                                É um recurso que capacita os dispositivos de entrada e saída a
-                                terem acesso direto à memória RAM, sem sobrecarregar o
-                                processador.
-                            </p>
-                        </details>
-                    </div>
-                    <div class="questionBox">
-                        <details class="question">
-                            <summary>10° Questão</summary>
-                            <p>
-                                Quando ativo, o componente pode ser endereçado; quando não está,
-                                o componente está no chamado modo de espera.
-                            </p>
-                        </details>
-                        <details class="question">
-                            <summary>11° Questão</summary>
-                            <p>
-                                É uma arquitetura de barramento de computador usada para troca
-                                de dados entre dispositivos que são identificados pelo endereço
-                                de hardware da memória física.
-                            </p>
-                        </details>
-                        <details class="question">
-                            <summary>12° Questão</summary>
-                            <p>
-                                É uma estrutura de software para distribuição e para o
-                                gerenciamento de dados em tempo real estando em sistemas
-                                distribuídos.
-                            </p>
-                        </details>
-                        <details class="question">
-                            <summary>13° Questão</summary>
-                            <p>
-                                Processador fabricado pela intel tendo seu primeiro modelo
-                                lançado em setembro de 2009 com quatro núcleos, cache L3 de 8MB
-                                e frequência de 2,66GHz.
-                            </p>
-                        </details>
-                        <details class="question">
-                            <summary>14° Questão</summary>
-                            <p>
-                                Processador fabricado pela intel teve seu primeiro modelo em
-                                meados de 2008, com a microarquitetura Sandy Bridge, possui
-                                versões com dois, quatro e seis núcleos de processamento.
-                            </p>
-                        </details>
-                        <details class="question">
-                            <summary>15° Questão</summary>
-                            <p> Significa dois núcleos. </p>
-                        </details>
-                        <details class="question">
-                            <summary>16° Questão</summary>
-                            <p> Significa quatro núcleos. </p>
-                        </details>
-                        <details class="question">
-                            <summary>17° Questão</summary>
-                            <p>
-                                Uma ordem de execução, com instruções encadeadas que são
-                                desempenhadas uma por vez.
-                            </p>
-                        </details>
-                        <details class="question">
-                            <summary>18° Questão</summary>
-                            <p>
-                                Uma memória temporária para que recupere velozmente os dados,
-                                sem precisar de uma busca direta na memória RAM.
-                            </p>
-                        </details>
-                    </div>
-                </div>
+      <!-- <h1>Cruzadinha de Arquitetura computacional</h1> -->
+      <section class="container_questions">
+        <div class="questionGroup">
+          <div class="questionTitle">
+            <span>Questões - Palavra Cruzada</span>
+          </div>
+          <div class="containerQst">
+            <div class="questionBox">
+              <details class="question">
+                <summary>1° Questão</summary>
+                <p>
+                  O cérebro dos dispositivos ou Unidade Central de Processamento
+                </p>
+              </details>
+              <details class="question">
+                <summary>2° Questão</summary>
+                <p>
+                  É um circuito combinatório responsável pela execução de somas,
+                  subtrações e funções lógicas, em um sistema digital.
+                </p>
+              </details>
+              <details class="question">
+                <summary>3° Questão</summary>
+                <p>
+                  São um tipo de memória com limites em termos de capacidade de
+                  armazenamento porém muito mais rápido no que se refere à
+                  velocidade de acesso aos dados.
+                </p>
+              </details>
+              <details class="question">
+                <summary>4° Questão</summary>
+                <p>
+                  É responsável pelo armazenamento de informações necessárias
+                  para a execução de aplicativos em uso e para o funcionamento
+                  do próprio sistema operacional.
+                </p>
+              </details>
+              <details class="question">
+                <summary>5° Questão</summary>
+                <p>
+                  É um tipo de memória que permite apenas a leitura de dados e
+                  não a escrita.
+                </p>
+              </details>
+              <details class="question">
+                <summary>6° Questão</summary>
+                <p>
+                  Uma vez programada, pode ser apagada apenas por exposição a
+                  uma forte luz ultravioleta.
+                </p>
+              </details>
+              <details class="question">
+                <summary>7° Questão</summary>
+                <p>
+                  É encontrada comumente em cartões de memória, Pen-Drives, PDAs
+                  e celulares.
+                </p>
+              </details>
+              <details class="question">
+                <summary>8° Questão</summary>
+                <p>
+                  Tem como função armazenar grandes quantidades de informações.
+                </p>
+              </details>
+              <details class="question">
+                <summary>9° Questão</summary>
+                <p>
+                  É um recurso que capacita os dispositivos de entrada e saída a
+                  terem acesso direto à memória RAM, sem sobrecarregar o
+                  processador.
+                </p>
+              </details>
             </div>
-        </section>
-        <section class="container_cruzadinha" id="cruzadinha">
-            <!-- <div class="ipt_q1">
-                <span class="labelQuestion">1°</span>
-                <input id="ipt_q1_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q1_2" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q1_3" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
+            <div class="questionBox">
+              <details class="question">
+                <summary>10° Questão</summary>
+                <p>
+                  Quando ativo, o componente pode ser endereçado; quando não
+                  está, o componente está no chamado modo de espera.
+                </p>
+              </details>
+              <details class="question">
+                <summary>11° Questão</summary>
+                <p>
+                  É uma arquitetura de barramento de computador usada para troca
+                  de dados entre dispositivos que são identificados pelo
+                  endereço de hardware da memória física.
+                </p>
+              </details>
+              <details class="question">
+                <summary>12° Questão</summary>
+                <p>
+                  É uma estrutura de software para distribuição e para o
+                  gerenciamento de dados em tempo real estando em sistemas
+                  distribuídos.
+                </p>
+              </details>
+              <details class="question">
+                <summary>13° Questão</summary>
+                <p>
+                  Processador fabricado pela intel tendo seu primeiro modelo
+                  lançado em setembro de 2009 com quatro núcleos, cache L3 de
+                  8MB e frequência de 2,66GHz.
+                </p>
+              </details>
+              <details class="question">
+                <summary>14° Questão</summary>
+                <p>
+                  Processador fabricado pela intel teve seu primeiro modelo em
+                  meados de 2008, com a microarquitetura Sandy Bridge, possui
+                  versões com dois, quatro e seis núcleos de processamento.
+                </p>
+              </details>
+              <details class="question">
+                <summary>15° Questão</summary>
+                <p>Significa dois núcleos.</p>
+              </details>
+              <details class="question">
+                <summary>16° Questão</summary>
+                <p>Significa quatro núcleos.</p>
+              </details>
+              <details class="question">
+                <summary>17° Questão</summary>
+                <p>
+                  Uma ordem de execução, com instruções encadeadas que são
+                  desempenhadas uma por vez.
+                </p>
+              </details>
+              <details class="question">
+                <summary>18° Questão</summary>
+                <p>
+                  Uma memória temporária para que recupere velozmente os dados,
+                  sem precisar de uma busca direta na memória RAM.
+                </p>
+              </details>
             </div>
-            <div class="ipt_q2">
-                <span class="labelQuestion">2°</span>
-                <input id="ipt_q2_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_2" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_3" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-            </div>
-            <div class="ipt_q3">
-                <span class="labelQuestion">3°</span>
-                <input id="ipt_q2_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_2" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_3" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-            </div>
-            <div class="ipt_q4">
-                <span class="labelQuestion">4°</span>
-                <input id="ipt_q2_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_2" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_3" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-            </div>
-            <div class="ipt_q5">
-                <span class="labelQuestion">5°</span>
-                <input id="ipt_q2_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_2" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_3" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-            </div>
-            <div class="ipt_q6">
-                <span class="labelQuestion">6°</span>
-                <input id="ipt_q2_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_2" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_3" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-            </div>
-            <div class="ipt_q7">
-                <span class="labelQuestion">7°</span>
-                <input id="ipt_q2_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_2" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_3" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-            </div>
-            <div class="ipt_q8">
-                <span class="labelQuestion">8°</span>
-                <input id="ipt_q2_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_2" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_3" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-            </div>
-            <div class="ipt_q9">
-                <span class="labelQuestion">9°</span>
-                <input id="ipt_q2_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_2" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_3" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-            </div>
-            <div class="ipt_q10">
-                <span class="labelQuestion">10°</span>
-                <input id="ipt_q2_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_2" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_3" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-            </div>
-            <div class="ipt_q11">
-                <span class="labelQuestion">11°</span>
-                <input id="ipt_q2_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_2" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_3" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-            </div>
-            <div class="ipt_q12">
-                <span class="labelQuestion">12°</span>
-                <input id="ipt_q2_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_2" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_3" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-            </div>
-            <div class="ipt_q13">
-                <span class="labelQuestion">13°</span>
-                <input id="ipt_q2_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_2" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_3" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-            </div>
-            <div class="ipt_q14">
-                <span class="labelQuestion">14°</span>
-                <input id="ipt_q2_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_2" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_3" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-            </div>
-            <div class="ipt_q15">
-                <span class="labelQuestion">15°</span>
-                <input id="ipt_q2_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_2" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_3" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-            </div>
-            <div class="ipt_q16">
-                <span class="labelQuestion">16°</span>
-                <input id="ipt_q2_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_2" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_3" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-            </div>
-            <div class="ipt_q17">
-                <span class="labelQuestion">17°</span>
-                <input id="ipt_q2_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_2" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_3" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-            </div>
-            <div class="ipt_q18">
-                <span class="labelQuestion">18°</span>
-                <input id="ipt_q2_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_2" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                <input id="ipt_q2_3" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-            </div>
-            <button class="btnVerify" onclick="Verificar()">Verificar</button> -->
-        </section>
+          </div>
+        </div>
+      </section>
+      <section class="container_cruzadinha" id="cruzadinha">
+        <div id="q_1"></div>
+        <!-- <div id="q2"></div>
+            <div id="q3"></div>
+            <div id="q4"></div>
+            <div id="q5"></div>
+            <div id="q6"></div>
+            <div id="q7"></div>
+            <div id="q8"></div>
+            <div id="q9"></div>
+            <div id="q10"></div>
+            <div id="q11"></div>
+            <div id="q12"></div>
+            <div id="q13"></div>
+            <div id="q14"></div>
+            <div id="q15"></div>
+            <div id="q16"></div>
+            <div id="q17"></div>
+            <div id="q18"></div> -->
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
 
 <script>
-    const rFim = [
-        "CPU",
-        "ULA",
-        "Registradores",
-        "RAM",
-        "ROM",
-        "EPROM",
-        "FLASH",
-        "Memoria-de-Massa",
-        "DMA",
-        "Chip-Select",
-        "Adress-Bus",
-        "Data-Bus",
-        "I5",
-        "I7",
-        "Dual-Core",
-        "Quad-Core",
-        "Threads",
-        "Cache"
-    ];
+  Swal.fire({
+      imageUrl: 'https://media.tenor.com/Zg4IASBSaUEAAAAd/cat.gif',
+      imageHeight: 200,
+      title: 'Palavra Cruzada',
+      text: 'Arquitetura Computacional',
+      confirmButtonText: 'Jogar',
+      footer: 'Feito por: Leonardo Brito, Marcelo Alcantara, Samuel Oliveira - 1ADS B',
+      showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+          popup: 'animate__hinge'
+      },
+      width: 600,
+      padding: '3em',
+      color: '#716add',
+      background: '#fff url(assets/img/plus.png)',
+      backdrop: `
+  rgba(0,0,123,0.4)
+  url("https://media.tenor.com/-AyTtMgs2mMAAAAj/nyan-cat-nyan.gif")
+  left top
+  no-repeat
+  `
+  });
 
-    $(".iptQuestion").keyup(function () {
-        if (this.value.length == this.maxLength) {
-            $(this).next(".iptQuestion").focus();
-        }
-    });
+  const rFim = [
+    "CPU",
+    "ULA",
+    "Registradores",
+    "RAM",
+    "ROM",
+    "EPROM",
+    "FLASH",
+    "Memoria-de-Massa",
+    "DMA",
+    "Chip-Select",
+    "Adress-Bus",
+    "Data-Bus",
+    "I5",
+    "I7",
+    "Dual-Core",
+    "Quad-Core",
+    "Threads",
+    "Cache",
+  ];
 
-    $(".iptQuestion").keyup(function () {
-        if (this.value.length == this.minLength) {
-            $(this).prev(".iptQuestion").focus();
-        }
-    });
+  function criaInputs() {
+    var questao = 1;
+    for (let index = 0; index < rFim.length; index++) {
+        cruzadinha.innerHTML += `
+            <div class="ipt_q${questao}">
+            <span class="labelQuestion">${questao}°</span>
+        `
 
-    function criaInputs() {
-        for(let qst = 1; qst <= rFim.length; qst++ ){
-            cruzadinha.innerHTML += `            
-            <div class="ipt_q${qst}">
-                <span class="labelQuestion">${qst}°</span>
+      for (let qs = 1; qs <= rFim[index].length; qs++) {
+            cruzadinha.innerHTML += `
+                <input id="ipt_q${questao}_${qs}" class="iptQuestion" type="text" minlength="0" maxlength="1" onkeyup="Analisar()" required/></div>
             `
-            for(let qs2 = 1; qs2 <= rFim[qst].length; qs2++) { 
-                cruzadinha.innerHTML += `
-                
-                    <input id="ipt_q2_1" class="iptQuestion" type="text" minlength="0" maxlength="1" required />
-                `
-            }
-        }
-        cruzadinha.innerHTML += `</div>`
+      }
+      questao++;
     }
-    Swal.fire({
-        imageUrl: 'https://media.tenor.com/Zg4IASBSaUEAAAAd/cat.gif',
-        imageHeight: 200,
-        title: 'Palavra Cruzada',
-        text: 'Arquitetura Computacional',
-        confirmButtonText: 'Jogar',
-        footer: 'Feito por: Leonardo Brito, Marcelo Alcantara, Samuel Oliveira - 1ADS B',
-        showClass: {
-            popup: 'animate__animated animate__fadeInDown'
-        },
-        hideClass: {
-            popup: 'animate__hinge'
-        },
-        width: 600,
-        padding: '3em',
-        color: '#716add',
-        background: '#fff url(assets/img/plus.png)',
-        backdrop: `
-    rgba(0,0,123,0.4)
-    url("https://media.tenor.com/-AyTtMgs2mMAAAAj/nyan-cat-nyan.gif")
-    left top
-    no-repeat
-    `
-    });
+  }
+  // $(teste).keyup(function () {
+  //     if (this.value.length == this.maxLength) {
+  //         $(this).next(teste).focus();
+  //     }
+  // });
 
-    function Verificar() {
-        var r = "";
-        for (let index = 0; index <= 0; index++) {
-            r = rFim[index];
-            Analisar(r);
-            console.log(`rFim: ${rFim}`);
-            console.log(`PALAVRA: ${r}`);
-        }
+  // $(teste).keyup(function () {
+  //     if (this.value.length == this.minLength) {
+  //         $(this).prev(teste).focus();
+  //     }
+  // });
+
+  function Analisar(qstao) {
+    console.log(qstao);
+    var ipt = document.querySelectorAll("input");
+    var palavra = "";
+
+    for (let index = 0; index < rFim.length; index++) {
+      for (let qs = 0; qs <= rFim[index].length; qs++) {
+        palavra += ipt[qs].value;
+        // console.log(palavra);
+      }
     }
 
-    function Analisar(r) {
-        var caractere = ""; // Cada caractere
-        var palavra = []; // Palavra separada
-        var resp = ""; // Palavra inteira
+    // var caractere = ""; // Cada caractere
+    // var palavra = []; // Palavra separada
+    // var resp = ""; // Palavra inteira
+    // var r = "";
 
-        for (let index = 1; index <= 3; index++) {
-            caractere = document.getElementById(`ipt_q1_${index}`).value;
-            palavra.push(caractere);
-            resp = palavra.join("");
-            // alert(resp);
-            console.log(`RESPOSTA: ${resp}`);
-        }
+    // for (let index = 0; index <= ipt.length; index++) {
+    //     for (let index = 0; index <= 0; index++) {
+    //         r = rFim[index];
+    //         console.log(`rFim: ${rFim}`);
+    //         console.log(`PALAVRA: ${r}`);
+    //     }
 
-        if (resp == r) {
-            // alert('PARABÉNS VOCÊ ACERTOU')
-            console.log(`resposta: ${r} = palavra: ${resp}`);
-        } else {
-            // alert('VOCÊ ERROU. TENTE NOVAMENTE');
-        }
-    }
+    //     for (let index = 1; index <= 3; index++) {
+    //         caractere = document.getElementById(`ipt_q1_${index}`).value;
+    //         palavra.push(caractere);
+    //         resp = palavra.join("");
+    //         // alert(resp);
+    //         // console.log(`RESPOSTA: ${resp}`);
+    //     }
+
+    //     if (resp == r) {
+    //         // alert('PARABÉNS VOCÊ ACERTOU')
+
+    //         console.log(`resposta: ${r} = palavra: ${resp}`);
+    //     } else {
+    //         ipt[index].style.backgroundColor = "red;"
+    //         // alert('VOCÊ ERROU. TENTE NOVAMENTE');
+    //     }
+
+    // }
+  }
 </script>

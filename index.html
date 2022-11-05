@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="styles/style.css" />
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -230,7 +230,24 @@
             </div>
         </section>
         <section class="container_cruzadinha" id="cruzadinha">
-            <div id="box_Cruz" class="box_Cruz"></div>>
+            <div id="box_Cruz" class="box_Cruz"></div>
+            <div id="box_Cruz2" class="box_Cruz2"></div>
+            <div id="box_Cruz3" class="box_Cruz3"></div>
+            <div id="box_Cruz4" class="box_Cruz4"></div>
+            <div id="box_Cruz5" class="box_Cruz5"></div>
+            <div id="box_Cruz6" class="box_Cruz6"></div>
+            <div id="box_Cruz7" class="box_Cruz7"></div>
+            <div id="box_Cruz8" class="box_Cruz8"></div>
+            <div id="box_Cruz9" class="box_Cruz9"></div>
+            <div id="box_Cruz10" class="box_Cruz10"></div>
+            <div id="box_Cruz11" class="box_Cruz11"></div>
+            <div id="box_Cruz12" class="box_Cruz12"></div>
+            <div id="box_Cruz13" class="box_Cruz13"></div>
+            <div id="box_Cruz14" class="box_Cruz14"></div>
+            <div id="box_Cruz15" class="box_Cruz15"></div>
+            <div id="box_Cruz16" class="box_Cruz16"></div>
+            <div id="box_Cruz17" class="box_Cruz17"></div>
+            <div id="box_Cruz18" class="box_Cruz18"></div>
         </section>
     </main>
 </body>
@@ -284,20 +301,164 @@
         "Cache",
     ];
 
+    const rFimObj = {
+    1: "CPU",
+    2: "ULA",
+    3: "Registradores",
+    4: "RAM",
+    5: "ROM",
+    6: "EPROM",
+    7: "FLASH",
+    8: "Memoria-de-Massa",
+    9: "DMA",
+    10: "Chip-Select",
+    11: "Adress-Bus",
+    12: "Data-Bus",
+    13: "I5",
+    14: "I7",
+    15: "Dual-Core",
+    16: "Quad-Core",
+    17: "Threads",
+    18: "Cache"
+};
+
 
     function criaInputs() {
         var questao = 1;
+
         for (let i = 0; i < rFim.length; i++) {
-            cruzadinha.innerHTML += `<span>${questao}`
-            for (let a = 1; a <= rFim[i].length; a++) {
-                box_Cruz.innerHTML += `<div class="iptCruz${questao}"></div>`
-            }
+                if (questao == 1) {                   
+                    box_Cruz.innerHTML += `<span>${questao}`
+                    for (let a = 1; a <= rFim[i].length; a++) {
+                        box_Cruz.innerHTML += `<div class="iptCruz"></div>`
+                    }
+                }
+                else if (questao == 2) {
+                    box_Cruz2.innerHTML += `<span>${questao}`
+                    for (let a = 1; a <= rFim[i].length; a++) {
+                        box_Cruz2.innerHTML += `<div class="iptCruz"></div>`
+                    }
+                }
+
+                else if (questao == 3) {
+                    box_Cruz3.innerHTML += `<span>${questao}`
+                    for (let a = 1; a <= rFim[i].length; a++) {
+                        box_Cruz3.innerHTML += `<div class="iptCruz"></div>`
+                    }
+                }
+                else if (questao == 4) {
+                    box_Cruz4.innerHTML += `<span>${questao}`
+                    for (let a = 1; a <= rFim[i].length; a++) {
+                        box_Cruz4.innerHTML += `<div class="iptCruz"></div>`
+                    }
+                }
+
+                else if (questao == 5) {
+                    box_Cruz5.innerHTML += `<span>${questao}`
+                    for (let a = 1; a <= rFim[i].length; a++) {
+                        box_Cruz5.innerHTML += `<div class="iptCruz"></div>`
+                    }
+                }
+                else if (questao == 6) {
+                    box_Cruz6.innerHTML += `<span>${questao}`
+                    for (let a = 1; a <= rFim[i].length; a++) {
+                        box_Cruz6.innerHTML += `<div class="iptCruz"></div>`
+                    }
+                }
+
+                else if (questao == 7) {
+                    box_Cruz7.innerHTML += `<span>${questao}`
+                    for (let a = 1; a <= rFim[i].length; a++) {
+                        box_Cruz7.innerHTML += `<div class="iptCruz"></div>`
+                    }
+                }
+                else if (questao == 8) {
+                    box_Cruz8.innerHTML += `<span>${questao}`
+                    for (let a = 1; a <= rFim[i].length; a++) {
+                        box_Cruz8.innerHTML += `<div class="iptCruz"></div>`
+                    }
+                }
+
+                else if (questao == 9) {
+                    box_Cruz9.innerHTML += `<span>${questao}`
+                    for (let a = 1; a <= rFim[i].length; a++) {
+                        box_Cruz9.innerHTML += `<div class="iptCruz"></div>`
+                    }
+                }
+                else if (questao == 10) {
+                    box_Cruz10.innerHTML += `<span>${questao}`
+                    for (let a = 1; a <= rFim[i].length; a++) {
+                        box_Cruz10.innerHTML += `<div class="iptCruz"></div>`
+                    }
+                }
+
+                else if (questao == 11) {
+                    box_Cruz11.innerHTML += `<span>${questao}`
+                    for (let a = 1; a <= rFim[i].length; a++) {
+                        box_Cruz11.innerHTML += `<div class="iptCruz"></div>`
+                    }
+                }
+
+                else if (questao == 12) {
+                    box_Cruz12.innerHTML += `<span>${questao}`
+                    for (let a = 1; a <= rFim[i].length; a++) {
+                        box_Cruz12.innerHTML += `<div class="iptCruz"></div>`
+                    }
+                }
+
+                else if (questao == 13) {
+                    box_Cruz13.innerHTML += `<span>${questao}`
+                    for (let a = 1; a <= rFim[i].length; a++) {
+                        box_Cruz13.innerHTML += `<div class="iptCruz"></div>`
+                    }
+                }
+
+                else if (questao == 14) {
+                    box_Cruz14.innerHTML += `<span>${questao}`
+                    for (let a = 1; a <= rFim[i].length; a++) {
+                        box_Cruz14.innerHTML += `<div class="iptCruz"></div>`
+                    }
+                }
+
+                else if (questao == 15) {
+                    box_Cruz15.innerHTML += `<span>${questao}`
+                    for (let a = 1; a <= rFim[i].length; a++) {
+                        box_Cruz15.innerHTML += `<div class="iptCruz"></div>`
+                    }
+                }
+
+                else if (questao == 16) {
+                    box_Cruz16.innerHTML += `<span>${questao}`
+                    for (let a = 1; a <= rFim[i].length; a++) {
+                        box_Cruz16.innerHTML += `<div class="iptCruz"></div>`
+                    }
+                }
+
+                else if (questao == 17) {
+                    box_Cruz17.innerHTML += `<span>${questao}`
+                    for (let a = 1; a <= rFim[i].length; a++) {
+                        box_Cruz17.innerHTML += `<div class="iptCruz"></div>`
+                    }
+                }
+
+                else if (questao == 18) {
+                    box_Cruz18.innerHTML += `<span>${questao}`
+                    for (let a = 1; a <= rFim[i].length; a++) {
+                        box_Cruz18.innerHTML += `<div class="iptCruz"></div>`
+                    }
+                }
             questao++;
         }
     }
     
-    var teste = document.querySelectorAll("input");
-    for (let i = 0; i <= teste.length; i++) {
-        teste[i].value == rFim[prop].value
+    function verificar() {
+        var inputs = document.querySelectorAll("input").value;
+        for (let i = 0; i <= inputs.length; i++) {
+            for(var prop in rFim) {
+                if(inputs == rFim[i]) {
+                    console.log('boa');
+                }
+            }
+        }
     }
 </script>

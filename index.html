@@ -302,161 +302,168 @@
     ];
 
     const rFimObj = {
-    1: "CPU",
-    2: "ULA",
-    3: "Registradores",
-    4: "RAM",
-    5: "ROM",
-    6: "EPROM",
-    7: "FLASH",
-    8: "Memoria-de-Massa",
-    9: "DMA",
-    10: "Chip-Select",
-    11: "Adress-Bus",
-    12: "Data-Bus",
-    13: "I5",
-    14: "I7",
-    15: "Dual-Core",
-    16: "Quad-Core",
-    17: "Threads",
-    18: "Cache"
-};
+        1: "CPU",
+        2: "ULA",
+        3: "Registradores",
+        4: "RAM",
+        5: "ROM",
+        6: "EPROM",
+        7: "FLASH",
+        8: "Memoria-de-Massa",
+        9: "DMA",
+        10: "Chip-Select",
+        11: "Adress-Bus",
+        12: "Data-Bus",
+        13: "I5",
+        14: "I7",
+        15: "Dual-Core",
+        16: "Quad-Core",
+        17: "Threads",
+        18: "Cache"
+    };
 
 
     function criaInputs() {
         var questao = 1;
 
         for (let i = 0; i < rFim.length; i++) {
-                if (questao == 1) {                   
-                    box_Cruz.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz.innerHTML += `<div class="iptCruz"></div>`
-                    }
+            if (questao == 1) {
+                box_Cruz.innerHTML += `<span>${questao}`
+                for (let a = 1; a <= rFim[i].length; a++) {
+                    box_Cruz.innerHTML += `<div class="iptCruz"></div>`
                 }
-                else if (questao == 2) {
-                    box_Cruz2.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz2.innerHTML += `<div class="iptCruz"></div>`
-                    }
+            }
+            else if (questao == 2) {
+                box_Cruz2.innerHTML += `<span>${questao}`
+                for (let a = 1; a <= rFim[i].length; a++) {
+                    box_Cruz2.innerHTML += `<div class="iptCruz"></div>`
                 }
+            }
 
-                else if (questao == 3) {
-                    box_Cruz3.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz3.innerHTML += `<div class="iptCruz"></div>`
-                    }
+            else if (questao == 3) {
+                box_Cruz3.innerHTML += `<span>${questao}`
+                for (let a = 1; a <= rFim[i].length; a++) {
+                    box_Cruz3.innerHTML += `<div class="iptCruz"></div>`
                 }
-                else if (questao == 4) {
-                    box_Cruz4.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz4.innerHTML += `<div class="iptCruz"></div>`
-                    }
+            }
+            else if (questao == 4) {
+                box_Cruz4.innerHTML += `<span>${questao}`
+                for (let a = 1; a <= rFim[i].length; a++) {
+                    box_Cruz4.innerHTML += `<div class="iptCruz"></div>`
                 }
+            }
 
-                else if (questao == 5) {
-                    box_Cruz5.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz5.innerHTML += `<div class="iptCruz"></div>`
-                    }
+            else if (questao == 5) {
+                box_Cruz5.innerHTML += `<span>${questao}`
+                for (let a = 1; a <= rFim[i].length; a++) {
+                    box_Cruz5.innerHTML += `<div class="iptCruz"></div>`
                 }
-                else if (questao == 6) {
-                    box_Cruz6.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz6.innerHTML += `<div class="iptCruz"></div>`
-                    }
+            }
+            else if (questao == 6) {
+                box_Cruz6.innerHTML += `<span>${questao}`
+                for (let a = 1; a <= rFim[i].length; a++) {
+                    box_Cruz6.innerHTML += `<div class="iptCruz"></div>`
                 }
+            }
 
-                else if (questao == 7) {
-                    box_Cruz7.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz7.innerHTML += `<div class="iptCruz"></div>`
-                    }
+            else if (questao == 7) {
+                box_Cruz7.innerHTML += `<span>${questao}`
+                for (let a = 1; a <= rFim[i].length; a++) {
+                    box_Cruz7.innerHTML += `<div class="iptCruz"></div>`
                 }
-                else if (questao == 8) {
-                    box_Cruz8.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz8.innerHTML += `<div class="iptCruz"></div>`
-                    }
+            }
+            else if (questao == 8) {
+                box_Cruz8.innerHTML += `<span>${questao}`
+                for (let a = 1; a <= rFim[i].length; a++) {
+                    box_Cruz8.innerHTML += `<div class="iptCruz"></div>`
                 }
+            }
 
-                else if (questao == 9) {
-                    box_Cruz9.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz9.innerHTML += `<div class="iptCruz"></div>`
-                    }
+            else if (questao == 9) {
+                box_Cruz9.innerHTML += `<span>${questao}`
+                for (let a = 1; a <= rFim[i].length; a++) {
+                    box_Cruz9.innerHTML += `<div class="iptCruz"></div>`
                 }
-                else if (questao == 10) {
-                    box_Cruz10.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz10.innerHTML += `<div class="iptCruz"></div>`
-                    }
+            }
+            else if (questao == 10) {
+                box_Cruz10.innerHTML += `<span>${questao}`
+                for (let a = 1; a <= rFim[i].length; a++) {
+                    box_Cruz10.innerHTML += `<div class="iptCruz"></div>`
                 }
+            }
 
-                else if (questao == 11) {
-                    box_Cruz11.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz11.innerHTML += `<div class="iptCruz"></div>`
-                    }
+            else if (questao == 11) {
+                box_Cruz11.innerHTML += `<span>${questao}`
+                for (let a = 1; a <= rFim[i].length; a++) {
+                    box_Cruz11.innerHTML += `<div class="iptCruz"></div>`
                 }
+            }
 
-                else if (questao == 12) {
-                    box_Cruz12.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz12.innerHTML += `<div class="iptCruz"></div>`
-                    }
+            else if (questao == 12) {
+                box_Cruz12.innerHTML += `<span>${questao}`
+                for (let a = 1; a <= rFim[i].length; a++) {
+                    box_Cruz12.innerHTML += `<div class="iptCruz"></div>`
                 }
+            }
 
-                else if (questao == 13) {
-                    box_Cruz13.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz13.innerHTML += `<div class="iptCruz"></div>`
-                    }
+            else if (questao == 13) {
+                box_Cruz13.innerHTML += `<span>${questao}`
+                for (let a = 1; a <= rFim[i].length; a++) {
+                    box_Cruz13.innerHTML += `<div class="iptCruz"></div>`
                 }
+            }
 
-                else if (questao == 14) {
-                    box_Cruz14.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz14.innerHTML += `<div class="iptCruz"></div>`
-                    }
+            else if (questao == 14) {
+                box_Cruz14.innerHTML += `<span>${questao}`
+                for (let a = 1; a <= rFim[i].length; a++) {
+                    box_Cruz14.innerHTML += `<div class="iptCruz"></div>`
                 }
+            }
 
-                else if (questao == 15) {
-                    box_Cruz15.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz15.innerHTML += `<div class="iptCruz"></div>`
-                    }
+            else if (questao == 15) {
+                box_Cruz15.innerHTML += `<span>${questao}`
+                for (let a = 1; a <= rFim[i].length; a++) {
+                    box_Cruz15.innerHTML += `<div class="iptCruz"></div>`
                 }
+            }
 
-                else if (questao == 16) {
-                    box_Cruz16.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz16.innerHTML += `<div class="iptCruz"></div>`
-                    }
+            else if (questao == 16) {
+                box_Cruz16.innerHTML += `<span>${questao}`
+                for (let a = 1; a <= rFim[i].length; a++) {
+                    box_Cruz16.innerHTML += `<div class="iptCruz"></div>`
                 }
+            }
 
-                else if (questao == 17) {
-                    box_Cruz17.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz17.innerHTML += `<div class="iptCruz"></div>`
-                    }
+            else if (questao == 17) {
+                box_Cruz17.innerHTML += `<span>${questao}`
+                for (let a = 1; a <= rFim[i].length; a++) {
+                    box_Cruz17.innerHTML += `<div class="iptCruz"></div>`
                 }
+            }
 
-                else if (questao == 18) {
-                    box_Cruz18.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz18.innerHTML += `<div class="iptCruz"></div>`
-                    }
+            else if (questao == 18) {
+                box_Cruz18.innerHTML += `<span>${questao}`
+                for (let a = 1; a <= rFim[i].length; a++) {
+                    box_Cruz18.innerHTML += `<div class="iptCruz"></div>`
                 }
+            }
             questao++;
         }
     }
-    
+
     function verificar() {
-        var inputs = document.querySelectorAll("input").value;
-        for (let i = 0; i <= inputs.length; i++) {
-            for(var prop in rFim) {
-                if(inputs == rFim[i]) {
-                    console.log('boa');
+        var tamanhoObj = Object.keys(rFimObj).length;
+        // console.log(tamanhoObj);
+
+        var inputs = document.querySelectorAll("input");
+        // console.log(inputs);
+        // console.log(inputs[0].value)
+
+        for (var prop in rFimObj) {
+            for (let i = 0; i <= tamanhoObj; i++) {
+                var valorIpt = inputs[i].value;
+                if (valorIpt == rFimObj[i]) {
+                    console.log("Boa");
                 }
             }
         }

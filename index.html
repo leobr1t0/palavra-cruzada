@@ -230,24 +230,21 @@
             </div>
         </section>
         <section class="container_cruzadinha" id="cruzadinha">
-            <div id="box_Cruz" class="box_Cruz"></div>
-            <div id="box_Cruz2" class="box_Cruz2"></div>
-            <div id="box_Cruz3" class="box_Cruz3"></div>
-            <div id="box_Cruz4" class="box_Cruz4"></div>
-            <div id="box_Cruz5" class="box_Cruz5"></div>
-            <div id="box_Cruz6" class="box_Cruz6"></div>
-            <div id="box_Cruz7" class="box_Cruz7"></div>
-            <div id="box_Cruz8" class="box_Cruz8"></div>
-            <div id="box_Cruz9" class="box_Cruz9"></div>
-            <div id="box_Cruz10" class="box_Cruz10"></div>
-            <div id="box_Cruz11" class="box_Cruz11"></div>
-            <div id="box_Cruz12" class="box_Cruz12"></div>
-            <div id="box_Cruz13" class="box_Cruz13"></div>
-            <div id="box_Cruz14" class="box_Cruz14"></div>
-            <div id="box_Cruz15" class="box_Cruz15"></div>
-            <div id="box_Cruz16" class="box_Cruz16"></div>
-            <div id="box_Cruz17" class="box_Cruz17"></div>
-            <div id="box_Cruz18" class="box_Cruz18"></div>
+            <div>
+                <div id="box_Cruz" class="box_Cruz"></div>
+                <div id="box_Cruz2" class="box_Cruz"></div>
+                <div id="box_Cruz3" class="box_Cruz"></div>
+                <div id="box_Cruz4" class="box_Cruz"></div>
+                <div id="box_Cruz5" class="box_Cruz"></div>
+                <div id="box_Cruz6" class="box_Cruz"></div>
+                <div id="box_Cruz7" class="box_Cruz"></div>
+                <div id="box_Cruz8" class="box_Cruz"></div>
+                <div id="box_Cruz9" class="box_Cruz"></div>
+                <div id="box_Cruz10" class="box_Cruz"></div>
+                <div id="box_Cruz11" class="box_Cruz"></div>
+                <div id="box_Cruz12" class="box_Cruz"></div>
+                <div id="box_Cruz13" class="box_Cruz"></div>
+            </div>
         </section>
     </main>
 </body>
@@ -301,164 +298,176 @@
         "Cache",
     ];
 
-    const rFimObj = {
-    1: "CPU",
-    2: "ULA",
-    3: "Registradores",
-    4: "RAM",
-    5: "ROM",
-    6: "EPROM",
-    7: "FLASH",
-    8: "Memoria-de-Massa",
-    9: "DMA",
-    10: "Chip-Select",
-    11: "Adress-Bus",
-    12: "Data-Bus",
-    13: "I5",
-    14: "I7",
-    15: "Dual-Core",
-    16: "Quad-Core",
-    17: "Threads",
-    18: "Cache"
-};
-
+    var indexLn8 = 1;
 
     function criaInputs() {
-        var questao = 1;
 
-        for (let i = 0; i < rFim.length; i++) {
-                if (questao == 1) {                   
-                    box_Cruz.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz.innerHTML += `<div class="iptCruz"></div>`
-                    }
+        // 1° Linha
+        // for (let i = 0; i < 1; i++) {
+            for (var indexLn1 = 1; indexLn1 <= 15; indexLn1++) {
+                if (indexLn1 == 11 || indexLn1 == 8) {
+                    box_Cruz.innerHTML += `<div class="block_white" id="block${indexLn1}"></div>`;
                 }
-                else if (questao == 2) {
-                    box_Cruz2.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz2.innerHTML += `<div class="iptCruz"></div>`
-                    }
+                else {
+                    box_Cruz.innerHTML += `<div class="block_black"></div>`;
                 }
+            }
+        // }
 
-                else if (questao == 3) {
-                    box_Cruz3.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz3.innerHTML += `<div class="iptCruz"></div>`
-                    }
+        // 2° Linha
+        // for (let i = 0; i < 1; i++) {
+            for (var indexLn2 = 1; indexLn2 <= 15; indexLn2++) {
+                if (indexLn2 == 11 || indexLn2 == 8) {
+                    box_Cruz2.innerHTML += `<div class="block_white" id="block${indexLn2}"></div>`;
                 }
-                else if (questao == 4) {
-                    box_Cruz4.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz4.innerHTML += `<div class="iptCruz"></div>`
-                    }
+                else {
+                    box_Cruz2.innerHTML += `<div class="block_black"></div>`;
                 }
+            }
+        // }
 
-                else if (questao == 5) {
-                    box_Cruz5.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz5.innerHTML += `<div class="iptCruz"></div>`
-                    }
+        // 3° Linha
+        // for (let i = 0; i < 1; i++) {
+            for (var indexLn3 = 1; indexLn3 <= 15; indexLn3++) {
+                if (indexLn3 == 8 || indexLn3 == 11) {
+                    box_Cruz3.innerHTML += `<div class="block_white" id="block${indexLn3}"></div>`;
                 }
-                else if (questao == 6) {
-                    box_Cruz6.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz6.innerHTML += `<div class="iptCruz"></div>`
-                    }
+                else {
+                    box_Cruz3.innerHTML += `<div class="block_black"></div>`;
                 }
+            }
+        // }
 
-                else if (questao == 7) {
-                    box_Cruz7.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz7.innerHTML += `<div class="iptCruz"></div>`
-                    }
+        // 4° Linha
+        // for (let i = 0; i < 1; i++) {
+            for (var indexLn4 = 1; indexLn4 <= 15; indexLn4++) {
+                if (indexLn4 == 8 || indexLn4 == 11 || indexLn4 == 14) {
+                    box_Cruz4.innerHTML += `<div class="block_white" id="block${indexLn4}"></div>`;
                 }
-                else if (questao == 8) {
-                    box_Cruz8.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz8.innerHTML += `<div class="iptCruz"></div>`
-                    }
+                else {
+                    box_Cruz4.innerHTML += `<div class="block_black"></div>`;
                 }
+            }
+        // }
 
-                else if (questao == 9) {
-                    box_Cruz9.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz9.innerHTML += `<div class="iptCruz"></div>`
-                    }
+        // 5° Linha
+        // for (let i = 0; i < 1; i++) {
+            for (var indexLn5 = 1; indexLn5 <= 15; indexLn5++) {
+                if (indexLn5 == 2 || indexLn5 == 8 || indexLn5 == 11 || indexLn5 == 14) {
+                    box_Cruz5.innerHTML += `<div class="block_white" id="block${indexLn5}"></div>`;
                 }
-                else if (questao == 10) {
-                    box_Cruz10.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz10.innerHTML += `<div class="iptCruz"></div>`
-                    }
+                else {
+                    box_Cruz5.innerHTML += `<div class="block_black"></div>`;
                 }
+            }
+        // }
 
-                else if (questao == 11) {
-                    box_Cruz11.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz11.innerHTML += `<div class="iptCruz"></div>`
-                    }
+        // 6° Linha
+        // for (let i = 0; i < 1; i++) {
+            for (var indexLn6 = 1; indexLn6 <= 15; indexLn6++) {
+                if (indexLn6 == 2 || indexLn6 == 8 || indexLn6 == 11 || indexLn6 == 14) {
+                    box_Cruz6.innerHTML += `<div class="block_white" id="block${indexLn6}"></div>`;
                 }
+                else {
+                    box_Cruz6.innerHTML += `<div class="block_black"></div>`;
+                }
+            }
+        // }
 
-                else if (questao == 12) {
-                    box_Cruz12.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz12.innerHTML += `<div class="iptCruz"></div>`
-                    }
-                }
-
-                else if (questao == 13) {
-                    box_Cruz13.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz13.innerHTML += `<div class="iptCruz"></div>`
-                    }
-                }
-
-                else if (questao == 14) {
-                    box_Cruz14.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz14.innerHTML += `<div class="iptCruz"></div>`
-                    }
-                }
-
-                else if (questao == 15) {
-                    box_Cruz15.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz15.innerHTML += `<div class="iptCruz"></div>`
-                    }
-                }
-
-                else if (questao == 16) {
-                    box_Cruz16.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz16.innerHTML += `<div class="iptCruz"></div>`
-                    }
-                }
-
-                else if (questao == 17) {
-                    box_Cruz17.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz17.innerHTML += `<div class="iptCruz"></div>`
-                    }
-                }
-
-                else if (questao == 18) {
-                    box_Cruz18.innerHTML += `<span>${questao}`
-                    for (let a = 1; a <= rFim[i].length; a++) {
-                        box_Cruz18.innerHTML += `<div class="iptCruz"></div>`
-                    }
-                }
-            questao++;
+        // 7° Linha
+        for (var indexLn7 = 1; indexLn7 <= 15; indexLn7++) {
+            if (indexLn7 == 2 || indexLn7 == 8 || indexLn7 == 11 || indexLn7 == 14) {
+                box_Cruz7.innerHTML += `<div class="block_white" id="block${indexLn7}"></div>`;
+            }
+            else {
+                box_Cruz7.innerHTML += `<div class="block_black"></div>`;
+            }
         }
-    }
-    
-    function verificar() {
-        var inputs = document.querySelectorAll("input").value;
-        for (let i = 0; i <= inputs.length; i++) {
-            for(var prop in rFim) {
-                if(inputs == rFim[i]) {
-                    console.log('boa');
+
+        // 8° Linha
+        // for (let i = 0; i < 1; i++) {
+            for (var indexLn8 = 1; indexLn8 <= 15; indexLn8++) {
+                if (indexLn8 == 15) {
+                    box_Cruz8.innerHTML += `<div class="block_black"></div>`;
+                }
+                else {
+                    box_Cruz8.innerHTML += `<div class="block_white" id="block${indexLn8}"></div>`;
+                }
+            }
+        // }
+
+        // 9° Linha
+        // for (let i = 0; i < 1; i++) {
+            for (var indexLn9 = 1; indexLn9 <= 15; indexLn9++) {
+                if (indexLn9 == 2 || indexLn9 == 8 || indexLn9 == 11 || indexLn9 == 14) {
+                    box_Cruz9.innerHTML += `<div class="block_white" id="block${indexLn9}"></div>`;
+                }
+                else {
+                    box_Cruz9.innerHTML += `<div class="block_black"></div>`;
+                }
+            }
+        // }
+
+        // 10° Linha
+        // for (let i = 0; i < 1; i++) {
+            for (var indexLn10 = 1; indexLn10 <= 15; indexLn10++) {
+                if (indexLn10 == 2 || indexLn10 == 8 || indexLn10 == 11) {
+                    box_Cruz10.innerHTML += `<div class="block_white" id="block${indexLn10}"></div>`;
+                }
+                else {
+                    box_Cruz10.innerHTML += `<div class="block_black"></div>`;
+                }
+            }
+        // }
+
+        // 11° Linha
+        // for (let i = 0; i < 1; i++) {
+            for (var indexLn11 = 1; indexLn11 <= 15; indexLn11++) {
+                if (indexLn11 == 2 || indexLn11 == 8 || indexLn11 == 11) {
+                    box_Cruz11.innerHTML += `<div class="block_white" id="block${indexLn11}"></div>`;
+                }
+                else {
+                    box_Cruz11.innerHTML += `<div class="block_black"></div>`;
+                }
+            }
+        // }
+
+        // 12° Linha
+        // for (let i = 0; i < 1; i++) {
+            for (var indexLn12 = 1; indexLn12 <= 15; indexLn12++) {
+                if (indexLn12 == 2 || indexLn12 == 8 || indexLn12 == 11) {
+                    box_Cruz12.innerHTML += `<div class="block_white" id="block${indexLn12}"></div>`;
+                }
+                else {
+                    box_Cruz12.innerHTML += `<div class="block_black"></div>`;
+                }
+            }
+        // }
+
+        // 13° Linha
+        for (let i = 0; i < 1; i++) {
+            for (var indexLn13 = 1; indexLn13 <= 15; indexLn13++) {
+                if (indexLn13 == 2 || indexLn13 == 11) {
+                    box_Cruz13.innerHTML += `<div class="block_white" id="block${indexLn13}"></div>`;
+                }
+                else {
+                    box_Cruz13.innerHTML += `<div class="block_black"></div>`;
                 }
             }
         }
+    }
+
+    function verificar() {
+        var inputs = document.querySelectorAll("input");
+
+        if(inputs[7].value.toLowerCase() == "memoria de massa") {
+            for(let i = 1; i < inputs[7].length; i++) {
+                var div = document.querySelector(`block${i}`);
+                div.innerHTML += "m";
+            }
+            indexLn13[2].style.backgroundColor = "red"
+        }
+
+        //Interessante muito interessante
     }
 </script>

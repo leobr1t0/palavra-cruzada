@@ -184,108 +184,25 @@ details[open] summary {
 }
 
 .box_Cruz {
-    background-color: pink;
-}
-
-.box_Cruz2 {
-    background-color: pink;
+    width: 40vw;
+    height: 5vh;
     display: flex;
-    flex-direction: row;
-    margin-left: 3%;
-}
-
-.box_Cruz3 {
+    /* grid-template-columns: auto auto auto auto auto auto auto auto; */
+    /* column-gap: 1px;
+    row-gap: 1px; */
     background-color: pink;
-    margin-left: 3%;
-    position: absolute;
-    top: 10%;
-    left: 84%;
 }
 
-.box_Cruz4 {
-    background-color: pink;
-    margin-left: 3%;
+.block_black {
+    width: 2vw;
+    height: 4vh;
+    margin: 5px;
+    background-color: black;
 }
 
-.box_Cruz5 {
-    background-color: pink;
-    margin-left: 3%;
-}
-
-.box_Cruz6 {
-    background-color: pink;
-    margin-left: 3%;
-}
-
-.box_Cruz7 {
-    background-color: pink;
-    margin-left: 3%;
-}
-
-.box_Cruz8 {
-    background-color: pink;
-    margin-left: 3%;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 15%;
-}
-
-.box_Cruz9 {
-    background-color: pink;
-    margin-left: 3%;
-}
-
-.box_Cruz10 {
-    background-color: pink;
-    margin-left: 3%;
-}
-
-.box_Cruz11 {
-    background-color: pink;
-    margin-left: 3%;
-}
-
-.box_Cruz12 {
-    background-color: pink;
-    margin-left: 3%;
-}
-
-.box_Cruz13 {
-    background-color: pink;
-    margin-left: 3%;
-}
-
-.box_Cruz14 {
-    background-color: pink;
-    margin-left: 3%;
-}
-
-.box_Cruz15 {
-    background-color: pink;
-    margin-left: 3%;
-}
-
-.box_Cruz16 {
-    background-color: pink;
-    margin-left: 3%;
-}
-
-.box_Cruz17 {
-    background-color: pink;
-    margin-left: 3%;
-    position: absolute;
-    left: 88%;
-    top: 3.5%;
-}
-
-.box_Cruz18 {
-    background-color: pink;
-    margin-left: 3%;
-}
-
-.iptCruz{
+.block_white {
+    width: 2vw;
+    height: 4vh;
+    margin: 5px;
     background-color: white;
-    padding: 10px;
-    margin: 3px;
 }

@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="styles/style.css" />
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="scripts/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Palavra Cruzada</title>
-</head>
+</head>         
 
 <body onload="criaInputs()">
     <main>
@@ -22,8 +23,8 @@
                 </div>
                 <div class="containerQst">
                     <div class="questionBox">
-                        <details class="question">
-                            <summary>1° Questão</summary>
+                        <details class="question" id="det1">
+                            <summary id="sum1">1° Questão</summary>
                             <div class="detQuest">
                                 <p>
                                     O cérebro dos dispositivos ou Unidade Central de Processamento
@@ -34,8 +35,8 @@
                                 </div>
                             </div>
                         </details>
-                        <details class="question">
-                            <summary>2° Questão</summary>
+                        <details class="question" id="det2">
+                            <summary id="sum2">2° Questão</summary>
                             <div class="detQuest">
                                 <p>
                                     É um circuito combinatório responsável pela execução de somas,
@@ -47,8 +48,8 @@
                                 </div>
                             </div>
                         </details>
-                        <details class="question">
-                            <summary>3° Questão</summary>
+                        <details class="question" id="det3">
+                            <summary id="sum3">3° Questão</summary>
                             <div class="detQuest">
                                 <p>
                                     São um tipo de memória com limites em termos de capacidade de
@@ -59,8 +60,8 @@
                                         placeholder="Insira aqui a resposta"></div>
                             </div>
                         </details>
-                        <details class="question">
-                            <summary>4° Questão</summary>
+                        <details class="question" id="det4">
+                            <summary id="sum4">4° Questão</summary>
                             <div class="detQuest">
                                 <p>
                                     É responsável pelo armazenamento de informações necessárias
@@ -71,8 +72,8 @@
                                         placeholder="Insira aqui a resposta"></div>
                             </div>
                         </details>
-                        <details class="question">
-                            <summary>5° Questão</summary>
+                        <details class="question" id="det5">
+                            <summary id="sum5">5° Questão</summary>
                             <div class="detQuest">
                                 <p>
                                     É um tipo de memória que permite apenas a leitura de dados e
@@ -82,8 +83,8 @@
                                         placeholder="Insira aqui a resposta"></div>
                             </div>
                         </details>
-                        <details class="question">
-                            <summary>6° Questão</summary>
+                        <details class="question" id="det6">
+                            <summary id="sum6">6° Questão</summary>
                             <div class="detQuest">
                                 <p>
                                     Uma vez programada, pode ser apagada apenas por exposição a
@@ -93,8 +94,8 @@
                                         placeholder="Insira aqui a resposta"></div>
                             </div>
                         </details>
-                        <details class="question">
-                            <summary>7° Questão</summary>
+                        <details class="question" id="det7">
+                            <summary id="sum7">7° Questão</summary>
                             <div class="detQuest">
                                 <p>
                                     É encontrada comumente em cartões de memória, Pen-Drives, PDAs
@@ -104,8 +105,8 @@
                                         placeholder="Insira aqui a resposta"></div>
                             </div>
                         </details>
-                        <details class="question">
-                            <summary>8° Questão</summary>
+                        <details class="question" id="det8">
+                            <summary id="sum8">8° Questão</summary>
                             <div class="detQuest">
                                 <p>
                                     Tem como função armazenar grandes quantidades de informações.
@@ -114,8 +115,8 @@
                                         placeholder="Insira aqui a resposta"></div>
                             </div>
                         </details>
-                        <details class="question">
-                            <summary>9° Questão</summary>
+                        <details class="question" id="det9">
+                            <summary id="sum9">9° Questão</summary>
                             <div class="detQuest">
                                 <p>
                                     É um recurso que capacita os dispositivos de entrada e saída a
@@ -128,8 +129,8 @@
                         </details>
                     </div>
                     <div class="questionBox">
-                        <details class="question">
-                            <summary>10° Questão</summary>
+                        <details class="question" id="det10">
+                            <summary id="sum10">10° Questão</summary>
                             <div class="detQuest">
                                 <p>
                                     Quando ativo, o componente pode ser endereçado; quando não
@@ -139,8 +140,8 @@
                                         placeholder="Insira aqui a resposta"></div>
                             </div>
                         </details>
-                        <details class="question">
-                            <summary>11° Questão</summary>
+                        <details class="question" id="det11">
+                            <summary id="sum11">11° Questão</summary>
                             <div class="detQuest">
                                 <p>
                                     É uma arquitetura de barramento de computador usada para troca
@@ -151,8 +152,8 @@
                                         placeholder="Insira aqui a resposta"></div>
                             </div>
                         </details>
-                        <details class="question">
-                            <summary>12° Questão</summary>
+                        <details class="question" id="det12">
+                            <summary id="sum12">12° Questão</summary>
                             <div class="detQuest">
                                 <p>
                                     É uma estrutura de software para distribuição e para o
@@ -163,8 +164,8 @@
                                         placeholder="Insira aqui a resposta"></div>
                             </div>
                         </details>
-                        <details class="question">
-                            <summary>13° Questão</summary>
+                        <details class="question" id="det13">
+                            <summary id="sum13">13° Questão</summary>
                             <div class="detQuest">
                                 <p>
                                     Processador fabricado pela intel tendo seu primeiro modelo
@@ -175,8 +176,8 @@
                                         placeholder="Insira aqui a resposta"></div>
                             </div>
                         </details>
-                        <details class="question">
-                            <summary>14° Questão</summary>
+                        <details class="question" id="det14">
+                            <summary id="sum14">14° Questão</summary>
                             <div class="detQuest">
                                 <p>
                                     Processador fabricado pela intel teve seu primeiro modelo em
@@ -187,24 +188,24 @@
                                         placeholder="Insira aqui a resposta"></div>
                             </div>
                         </details>
-                        <details class="question">
-                            <summary>15° Questão</summary>
+                        <details class="question" id="det15">
+                            <summary id="sum15">15° Questão</summary>
                             <div class="detQuest">
                                 <p>Significa dois núcleos.</p>
                                 <div><input type="text" id="" class="iptQuestion" onkeyup="verificar()"
                                         placeholder="Insira aqui a resposta"></div>
                             </div>
                         </details>
-                        <details class="question">
-                            <summary>16° Questão</summary>
+                        <details class="question" id="det16">
+                            <summary id="sum16">16° Questão</summary>
                             <div class="detQuest">
                                 <p>Significa quatro núcleos.</p>
                                 <div><input type="text" id="" class="iptQuestion" onkeyup="verificar()"
                                         placeholder="Insira aqui a resposta"></div>
                             </div>
                         </details>
-                        <details class="question">
-                            <summary>17° Questão</summary>
+                        <details class="question" id="det17">
+                            <summary id="sum17">17° Questão</summary>
                             <div class="detQuest">
                                 <p>
                                     Uma ordem de execução, com instruções encadeadas que são
@@ -214,8 +215,8 @@
                                         placeholder="Insira aqui a resposta"></div>
                             </div>
                         </details>
-                        <details class="question">
-                            <summary>18° Questão</summary>
+                        <details class="question" id="det18">
+                            <summary id="sum18">18° Questão</summary>
                             <div class="detQuest">
                                 <p>
                                     Uma memória temporária para que recupere velozmente os dados,
@@ -230,7 +231,7 @@
             </div>
         </section>
         <section class="container_cruzadinha" id="cruzadinha">
-            <div>
+            <div class="box_totalCruz">
                 <div id="box_Cruz" class="box_Cruz"></div>
                 <div id="box_Cruz2" class="box_Cruz"></div>
                 <div id="box_Cruz3" class="box_Cruz"></div>
@@ -276,195 +277,4 @@
     //   no-repeat
     //   `
     //   });
-
-    const rFim = [
-        "CPU",
-        "ULA",
-        "Registradores",
-        "RAM",
-        "ROM",
-        "EPROM",
-        "FLASH",
-        "Memoria-de-Massa",
-        "DMA",
-        "Chip-Select",
-        "Adress-Bus",
-        "Data-Bus",
-        "I5",
-        "I7",
-        "Dual-Core",
-        "Quad-Core",
-        "Threads",
-        "Cache",
-    ];
-
-    var indexLn8 = 1;
-
-    function criaInputs() {
-
-        
-        // 1° Linha
-        // for (let i = 0; i < 1; i++) {
-            for (var indexLn1 = 1; indexLn1 <= 15; indexLn1++) {
-                if (indexLn1 == 11 || indexLn1 == 8) {
-                    box_Cruz.innerHTML += `<div class="block_white" id="l1Block${indexLn1}"></div>`;
-                }
-                else {
-                    box_Cruz.innerHTML += `<div class="block_black"></div>`;
-                }
-            }
-        // }
-
-        // 2° Linha
-        // for (let i = 0; i < 1; i++) {
-            for (var indexLn2 = 1; indexLn2 <= 15; indexLn2++) {
-                if (indexLn2 == 11 || indexLn2 == 8) {
-                    box_Cruz2.innerHTML += `<div class="block_white" id="l2Block${indexLn2}"></div>`;
-                }
-                else {
-                    box_Cruz2.innerHTML += `<div class="block_black"></div>`;
-                }
-            }
-        // }
-
-        // 3° Linha
-        // for (let i = 0; i < 1; i++) {
-            for (var indexLn3 = 1; indexLn3 <= 15; indexLn3++) {
-                if (indexLn3 == 8 || indexLn3 == 11) {
-                    box_Cruz3.innerHTML += `<div class="block_white" id="l3Block${indexLn3}"></div>`;
-                }
-                else {
-                    box_Cruz3.innerHTML += `<div class="block_black"></div>`;
-                }
-            }
-        // }
-
-        // 4° Linha
-        // for (let i = 0; i < 1; i++) {
-            for (var indexLn4 = 1; indexLn4 <= 15; indexLn4++) {
-                if (indexLn4 == 8 || indexLn4 == 11 || indexLn4 == 14) {
-                    box_Cruz4.innerHTML += `<div class="block_white" id="l4Block${indexLn4}"></div>`;
-                }
-                else {
-                    box_Cruz4.innerHTML += `<div class="block_black"></div>`;
-                }
-            }
-        // }
-
-        // 5° Linha
-        // for (let i = 0; i < 1; i++) {
-            for (var indexLn5 = 1; indexLn5 <= 15; indexLn5++) {
-                if (indexLn5 == 2 || indexLn5 == 8 || indexLn5 == 11 || indexLn5 == 14) {
-                    box_Cruz5.innerHTML += `<div class="block_white" id="l5Block${indexLn5}"></div>`;
-                }
-                else {
-                    box_Cruz5.innerHTML += `<div class="block_black"></div>`;
-                }
-            }
-        // }
-
-        // 6° Linha
-        // for (let i = 0; i < 1; i++) {
-            for (var indexLn6 = 1; indexLn6 <= 15; indexLn6++) {
-                if (indexLn6 == 2 || indexLn6 == 8 || indexLn6 == 11 || indexLn6 == 14) {
-                    box_Cruz6.innerHTML += `<div class="block_white" id="l6Block${indexLn6}"></div>`;
-                }
-                else {
-                    box_Cruz6.innerHTML += `<div class="block_black"></div>`;
-                }
-            }
-        // }
-
-        // 7° Linha
-        for (var indexLn7 = 1; indexLn7 <= 15; indexLn7++) {
-            if (indexLn7 == 2 || indexLn7 == 8 || indexLn7 == 11 || indexLn7 == 14) {
-                box_Cruz7.innerHTML += `<div class="block_white" id="l7Block${indexLn7}"></div>`;
-            }
-            else {
-                box_Cruz7.innerHTML += `<div class="block_black"></div>`;
-            }
-        }
-
-        // 8° Linha
-        // for (let i = 0; i < 1; i++) {
-            for (var indexLn8 = 1; indexLn8 <= 15; indexLn8++) {
-                if (indexLn8 == 15) {
-                    box_Cruz8.innerHTML += `<div class="block_black"></div>`;
-                }
-                else {
-                    box_Cruz8.innerHTML += `<div class="block_white" id="l8Block${indexLn8}"></div>`;
-                }
-            }
-        // }
-
-        // 9° Linha
-        // for (let i = 0; i < 1; i++) {
-            for (var indexLn9 = 1; indexLn9 <= 15; indexLn9++) {
-                if (indexLn9 == 2 || indexLn9 == 8 || indexLn9 == 11 || indexLn9 == 14) {
-                    box_Cruz9.innerHTML += `<div class="block_white" id="l9Block${indexLn9}"></div>`;
-                }
-                else {
-                    box_Cruz9.innerHTML += `<div class="block_black"></div>`;
-                }
-            }
-        // }
-
-        // 10° Linha
-        // for (let i = 0; i < 1; i++) {
-            for (var indexLn10 = 1; indexLn10 <= 15; indexLn10++) {
-                if (indexLn10 == 2 || indexLn10 == 8 || indexLn10 == 11) {
-                    box_Cruz10.innerHTML += `<div class="block_white" id="l10Block${indexLn10}"></div>`;
-                } else {
-                    box_Cruz10.innerHTML += `<div class="block_black"></div>`;
-                }
-            }
-        // }
-
-        // 11° Linha
-        // for (let i = 0; i < 1; i++) {
-            for (var indexLn11 = 1; indexLn11 <= 15; indexLn11++) {
-                if (indexLn11 == 2 || indexLn11 == 8 || indexLn11 == 11) {
-                    box_Cruz11.innerHTML += `<div class="block_white" id="l11Block${indexLn11}"></div>`;
-                } else {
-                    box_Cruz11.innerHTML += `<div class="block_black"></div>`;
-                }
-            }
-        // }
-
-        // 12° Linha
-        // for (let i = 0; i < 1; i++) {
-            for (var indexLn12 = 1; indexLn12 <= 15; indexLn12++) {
-                if (indexLn12 == 1 || indexLn12 == 2 || indexLn12 == 3 || indexLn12 == 4 || indexLn12 == 5 || indexLn12 == 6 || indexLn12 == 7 || indexLn12 == 8 || indexLn12 == 11) {
-                    box_Cruz12.innerHTML += `<div class="block_white" id="l12Block${indexL12}"></div>`;
-                } else {
-                    box_Cruz12.innerHTML += `<div class="block_black"></div>`;
-                }
-            }
-        // }
-
-        // 13° Linha
-        // for (let i = 0; i < 1; i++) {
-            for (var indexLn13 = 1; indexLn13 <= 15; indexLn13++) {
-                if (indexLn13 == 2 || indexLn13 == 11) {
-                    box_Cruz13.innerHTML += `<div class="block_white" id="l13Block${indexLn13}"></div>`;
-                } else {
-                    box_Cruz13.innerHTML += `<div class="block_black"></div>`;
-                }
-            }
-        // }
-    }
-
-    function verificar() {
-        var inputs = document.querySelectorAll("input");
-
-        if(inputs[7].value.toLowerCase() == "memoria de massa") {
-            for(let i = 1; i < inputs[7].length; i++) {
-                var div = document.querySelector(`block${i}`);
-                div.innerHTML += "m";
-            }
-            indexLn13[2].style.backgroundColor = "red"
-        }
-
-        //Interessante muito interessante
-    }
 </script>

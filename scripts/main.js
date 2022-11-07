@@ -225,9 +225,83 @@ function verificar() {
         }
     }
     if (inputs[2].value.toLowerCase() == rFim[2]) {
-        for (let i = 1; i < inputs[2].value.length; i++) {
-            // document.querySelector(`div#l8Block${i}`).style.backgroundColor = "red";
+        var palavraCruz = inputs[2].value.replace(/\s/g, '');
+        palavraCruz = palavraCruz.split("");
+        var a = 0;
+        for (let i = 11; i == 11; i++) {
+            document.querySelector(`div#l1Block${i}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l1Block${i}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
         }
+        for (let i2 = 11; i2 == 11; i2++) {
+            document.querySelector(`div#l2Block${i2}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l2Block${i2}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i3 = 11; i3 == 11; i3++) {
+            document.querySelector(`div#l3Block${i3}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l3Block${i3}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i4 = 11; i4 == 11; i4++) {
+            document.querySelector(`div#l4Block${i4}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l4Block${i4}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i5 = 11; i5 == 11; i5++) {
+            document.querySelector(`div#l5Block${i5}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l5Block${i5}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i6 = 11; i6 == 11; i6++) {
+            document.querySelector(`div#l6Block${i6}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l6Block${i6}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i7 = 11; i7 == 11; i7++) {
+            document.querySelector(`div#l7Block${i7}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l7Block${i7}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i7 = 11; i7 == 11; i7++) {
+            document.querySelector(`div#l8Block${i7}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l8Block${i7}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i8 = 11; i8 == 11; i8++) {
+            document.querySelector(`div#l9Block${i8}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l9Block${i8}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i9 = 11; i9 == 11; i9++) {
+            document.querySelector(`div#l10Block${i9}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l10Block${i9}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i10 = 11; i10 == 11; i10++) {
+            document.querySelector(`div#l11Block${i10}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l11Block${i10}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i11 = 11; i11 == 11; i11++) {
+            document.querySelector(`div#l12Block${i11}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l12Block${i11}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i12 = 11; i12 == 11; i12++) {
+            document.querySelector(`div#l13Block${i12}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l13Block${i12}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i3 = 11; i3 == 11; i3++) {
+            document.querySelector(`div#l14Block${i3}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l14Block${i3}`).style.backgroundColor = "rgb(87, 255, 104)";
+            inputs[2].disabled = true;
+            sum3.style.textDecoration = "line-through";
+            det3.removeAttribute("open");
+            a++;
+        }
+
     }
     if (inputs[3].value.toLowerCase() == rFim[3]) {
         for (let i = 1; i < inputs[3].value.length; i++) {

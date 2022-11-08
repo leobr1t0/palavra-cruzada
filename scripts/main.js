@@ -263,39 +263,39 @@ function verificar() {
             document.querySelector(`div#l7Block${i7}`).style.backgroundColor = "rgb(87, 255, 104)";
             a++
         }
-        for (let i7 = 11; i7 == 11; i7++) {
-            document.querySelector(`div#l8Block${i7}`).innerText = palavraCruz[a];
-            document.querySelector(`div#l8Block${i7}`).style.backgroundColor = "rgb(87, 255, 104)";
-            a++
-        }
         for (let i8 = 11; i8 == 11; i8++) {
-            document.querySelector(`div#l9Block${i8}`).innerText = palavraCruz[a];
-            document.querySelector(`div#l9Block${i8}`).style.backgroundColor = "rgb(87, 255, 104)";
+            document.querySelector(`div#l8Block${i8}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l8Block${i8}`).style.backgroundColor = "rgb(87, 255, 104)";
             a++
         }
         for (let i9 = 11; i9 == 11; i9++) {
-            document.querySelector(`div#l10Block${i9}`).innerText = palavraCruz[a];
-            document.querySelector(`div#l10Block${i9}`).style.backgroundColor = "rgb(87, 255, 104)";
+            document.querySelector(`div#l9Block${i9}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l9Block${i9}`).style.backgroundColor = "rgb(87, 255, 104)";
             a++
         }
         for (let i10 = 11; i10 == 11; i10++) {
-            document.querySelector(`div#l11Block${i10}`).innerText = palavraCruz[a];
-            document.querySelector(`div#l11Block${i10}`).style.backgroundColor = "rgb(87, 255, 104)";
+            document.querySelector(`div#l10Block${i10}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l10Block${i10}`).style.backgroundColor = "rgb(87, 255, 104)";
             a++
         }
         for (let i11 = 11; i11 == 11; i11++) {
-            document.querySelector(`div#l12Block${i11}`).innerText = palavraCruz[a];
-            document.querySelector(`div#l12Block${i11}`).style.backgroundColor = "rgb(87, 255, 104)";
+            document.querySelector(`div#l11Block${i11}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l11Block${i11}`).style.backgroundColor = "rgb(87, 255, 104)";
             a++
         }
         for (let i12 = 11; i12 == 11; i12++) {
-            document.querySelector(`div#l13Block${i12}`).innerText = palavraCruz[a];
-            document.querySelector(`div#l13Block${i12}`).style.backgroundColor = "rgb(87, 255, 104)";
+            document.querySelector(`div#l12Block${i12}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l12Block${i12}`).style.backgroundColor = "rgb(87, 255, 104)";
             a++
         }
-        for (let i3 = 11; i3 == 11; i3++) {
-            document.querySelector(`div#l14Block${i3}`).innerText = palavraCruz[a];
-            document.querySelector(`div#l14Block${i3}`).style.backgroundColor = "rgb(87, 255, 104)";
+        for (let i13 = 11; i13 == 11; i13++) {
+            document.querySelector(`div#l13Block${i13}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l13Block${i13}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i14 = 11; i14 == 11; i14++) {
+            document.querySelector(`div#l14Block${i14}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l14Block${i14}`).style.backgroundColor = "rgb(87, 255, 104)";
             inputs[2].disabled = true;
             sum3.style.textDecoration = "line-through";
             det3.removeAttribute("open");
@@ -304,24 +304,116 @@ function verificar() {
 
     }
     if (inputs[3].value.toLowerCase() == rFim[3]) {
-        for (let i = 1; i < inputs[3].value.length; i++) {
-            // document.querySelector(`div#l8Block${i}`).style.backgroundColor = "red";
+        var palavraCruz = inputs[3].value.replace(/\s/g, '');
+        palavraCruz = palavraCruz.split("");
+        var a = 0;
+        for (let i = 5; i == 5; i++) {
+            document.querySelector(`div#l6Block${i}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l6Block${i}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i2 = 5; i2 == 5; i2++) {
+            document.querySelector(`div#l7Block${i2}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l7Block${i2}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i3 = 5; i3 == 5; i3++) {
+            document.querySelector(`div#l8Block${i3}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l8Block${i3}`).style.backgroundColor = "rgb(87, 255, 104)";
+            inputs[3].disabled = true;
+            sum4.style.textDecoration = "line-through";
+            det4.removeAttribute("open");
+            a++;
         }
     }
     if (inputs[4].value.toLowerCase() == rFim[4]) {
-        for (let i = 1; i < inputs[4].value.length; i++) {
-            // document.querySelector(`div#l8Block${i}`).style.backgroundColor = "red";
+        var palavraCruz = inputs[4].value.replace(/\s/g, '');
+        palavraCruz = palavraCruz.split("");
+        var a = 0;
+        for (let i = 5; i == 5; i++) {
+            document.querySelector(`div#l8Block${i}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l8Block${i}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i2 = 5; i2 == 5; i2++) {
+            document.querySelector(`div#l9Block${i2}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l9Block${i2}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i3 = 5; i3 == 5; i3++) {
+            document.querySelector(`div#l10Block${i3}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l10Block${i3}`).style.backgroundColor = "rgb(87, 255, 104)";
+            inputs[4].disabled = true;
+            sum5.style.textDecoration = "line-through";
+            det5.removeAttribute("open");
+            a++;
         }
     }
     if (inputs[5].value.toLowerCase() == rFim[5]) {
-        for (let i = 1; i < inputs[5].value.length; i++) {
-            // document.querySelector(`div#l8Block${i}`).style.backgroundColor = "red";
+        var palavraCruz = inputs[5].value.replace(/\s/g, '');
+        palavraCruz = palavraCruz.split("");
+        var a = 0;
+        for (let i = 9; i == 9; i++) {
+            document.querySelector(`div#l8Block${i}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l8Block${i}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i2 = 9; i2 == 9; i2++) {
+            document.querySelector(`div#l9Block${i2}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l9Block${i2}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i3 = 9; i3 == 9; i3++) {
+            document.querySelector(`div#l10Block${i3}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l10Block${i3}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++;
+        }
+        for (let i4 = 9; i4 == 9; i4++) {
+            document.querySelector(`div#l11Block${i4}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l11Block${i4}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++;
+        }
+        for (let i5 = 9; i5 == 9; i5++) {
+            document.querySelector(`div#l12Block${i5}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l12Block${i5}`).style.backgroundColor = "rgb(87, 255, 104)";
+            inputs[5].disabled = true;
+            sum6.style.textDecoration = "line-through";
+            det6.removeAttribute("open");
+            a++;        
         }
     }
     if (inputs[6].value.toLowerCase() == rFim[6]) {
-        for (let i = 1; i < inputs[6].value.length; i++) {
-            // document.querySelector(`div#l8Block${i}`).style.backgroundColor = "red";
-        }
+        // var palavraCruz = inputs[6].value.replace(/\s/g, '');
+        // palavraCruz = palavraCruz.split("");
+        // var a = 0;
+        // for (let i = 9; i == 9; i++) {
+        //     document.querySelector(`div#l8Block${i}`).innerText = palavraCruz[a];
+        //     document.querySelector(`div#l8Block${i}`).style.backgroundColor = "rgb(87, 255, 104)";
+        //     a++
+        // }
+        // for (let i2 = 9; i2 == 9; i2++) {
+        //     document.querySelector(`div#l9Block${i2}`).innerText = palavraCruz[a];
+        //     document.querySelector(`div#l9Block${i2}`).style.backgroundColor = "rgb(87, 255, 104)";
+        //     a++
+        // }
+        // for (let i3 = 9; i3 == 9; i3++) {
+        //     document.querySelector(`div#l10Block${i3}`).innerText = palavraCruz[a];
+        //     document.querySelector(`div#l10Block${i3}`).style.backgroundColor = "rgb(87, 255, 104)";
+        //     a++;
+        // }
+        // for (let i4 = 9; i4 == 9; i4++) {
+        //     document.querySelector(`div#l11Block${i4}`).innerText = palavraCruz[a];
+        //     document.querySelector(`div#l11Block${i4}`).style.backgroundColor = "rgb(87, 255, 104)";
+        //     a++;
+        // }
+        // for (let i5 = 9; i5 == 9; i5++) {
+        //     document.querySelector(`div#l12Block${i5}`).innerText = palavraCruz[a];
+        //     document.querySelector(`div#l12Block${i5}`).style.backgroundColor = "rgb(87, 255, 104)";
+        //     inputs[6].disabled = true;
+        //     sum7.style.textDecoration = "line-through";
+        //     det7.removeAttribute("open");
+        //     a++;        
+        // }
     }
     if (inputs[7].value.toLowerCase() == rFim[7]) {
         var palavraCruz = inputs[7].value.replace(/\s/g, '');
@@ -343,7 +435,7 @@ function verificar() {
         for (let i = 7; i <= 9; i++) {
             document.querySelector(`div#l5Block${i}`).innerText = palavraCruz[a];
             document.querySelector(`div#l5Block${i}`).style.backgroundColor = "rgb(87, 255, 104)";
-            inputs[9].disabled = true;
+            inputs[8].disabled = true;
             sum9.style.textDecoration = "line-through";
             det9.removeAttribute("open");
             a++;
@@ -363,35 +455,193 @@ function verificar() {
         }
     }
     if (inputs[10].value.toLowerCase() == rFim[10]) {
-        for (let i = 1; i < inputs[10].value.length; i++) {
-            // document.querySelector(`div#l8Block${i}`).style.backgroundColor = "red";
+        var palavraCruz = inputs[10].value.replace(/\s/g, '');
+        palavraCruz = palavraCruz.split("");
+        var a = 0;
+        for (let i = 2; i == 2; i++) {
+            document.querySelector(`div#l5Block${i}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l5Block${i}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i2 = 2; i2 == 2; i2++) {
+            document.querySelector(`div#l6Block${i2}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l6Block${i2}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i3 = 2; i3 == 2; i3++) {
+            document.querySelector(`div#l7Block${i3}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l7Block${i3}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i4 = 2; i4 == 2; i4++) {
+            document.querySelector(`div#l8Block${i4}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l8Block${i4}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i5 = 2; i5 == 2; i5++) {
+            document.querySelector(`div#l9Block${i5}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l9Block${i5}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i6 = 2; i6 == 2; i6++) {
+            document.querySelector(`div#l10Block${i6}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l10Block${i6}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i7 = 2; i7 == 2; i7++) {
+            document.querySelector(`div#l11Block${i7}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l11Block${i7}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i8 = 2; i8 == 2; i8++) {
+            document.querySelector(`div#l12Block${i8}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l12Block${i8}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i9 = 2; i9 == 2; i9++) {
+            document.querySelector(`div#l13Block${i9}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l13Block${i9}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i10 = 2; i10 == 2; i10++) {
+            document.querySelector(`div#l14Block${i10}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l14Block${i10}`).style.backgroundColor = "rgb(87, 255, 104)";
+            inputs[10].disabled = true;
+            sum11.style.textDecoration = "line-through";
+            det11.removeAttribute("open");
+            a++;
         }
     }
     if (inputs[11].value.toLowerCase() == rFim[11]) {
-        for (let i = 1; i < inputs[11].value.length; i++) {
-            // document.querySelector(`div#l8Block${i}`).style.backgroundColor = "red";
+        var palavraCruz = inputs[11].value.replace(/\s/g, '');
+        palavraCruz = palavraCruz.split("");
+        var a = 0;
+        for (let i = 7; i == 7; i++) {
+            document.querySelector(`div#l5Block${i}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l5Block${i}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i2 = 7; i2 == 7; i2++) {
+            document.querySelector(`div#l6Block${i2}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l6Block${i2}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i3 = 7; i3 == 7; i3++) {
+            document.querySelector(`div#l7Block${i3}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l7Block${i3}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i4 = 7; i4 == 7; i4++) {
+            document.querySelector(`div#l8Block${i4}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l8Block${i4}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i5 = 7; i5 == 7; i5++) {
+            document.querySelector(`div#l9Block${i5}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l9Block${i5}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i6 = 7; i6 == 7; i6++) {
+            document.querySelector(`div#l10Block${i6}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l10Block${i6}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i7 = 7; i7 == 7; i7++) {
+            document.querySelector(`div#l11Block${i7}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l11Block${i7}`).style.backgroundColor = "rgb(87, 255, 104)";
+            inputs[11].disabled = true;
+            sum12.style.textDecoration = "line-through";
+            det12.removeAttribute("open");
+            a++;        
         }
     }
     if (inputs[12].value.toLowerCase() == rFim[12]) {
-        for (let i = 1; i < inputs[12].value.length; i++) {
-            // document.querySelector(`div#l8Block${i}`).style.backgroundColor = "red";
+        var palavraCruz = inputs[12].value.replace(/\s/g, '');
+        palavraCruz = palavraCruz.split("");
+        var a = 0;
+        for (let i = 6; i == 6; i++) {
+            document.querySelector(`div#l8Block${i}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l8Block${i}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i2 = 6; i2 == 6; i2++) {
+            document.querySelector(`div#l7Block${i2}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l7Block${i2}`).style.backgroundColor = "rgb(87, 255, 104)";
+            inputs[12].disabled = true;
+            sum13.style.textDecoration = "line-through";
+            det13.removeAttribute("open");
+            a++;
         }
     }
     if (inputs[13].value.toLowerCase() == rFim[13]) {
-        for (let i = 1; i < inputs[13].value.length; i++) {
-            // document.querySelector(`div#l8Block${i}`).style.backgroundColor = "red";
+        var palavraCruz = inputs[13].value.replace(/\s/g, '');
+        palavraCruz = palavraCruz.split("");
+        var a = 0;
+        for (let i = 6; i == 6; i++) {
+            document.querySelector(`div#l8Block${i}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l8Block${i}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i2 = 6; i2 == 6; i2++) {
+            document.querySelector(`div#l9Block${i2}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l9Block${i2}`).style.backgroundColor = "rgb(87, 255, 104)";
+            inputs[13].disabled = true;
+            sum14.style.textDecoration = "line-through";
+            det14.removeAttribute("open");
+            a++;
         }
     }
     if (inputs[14].value.toLowerCase() == rFim[14]) {
-        for (let i = 1; i < inputs[14].value.length; i++) {
-            // document.querySelector(`div#l8Block${i}`).style.backgroundColor = "red";
+        var palavraCruz = inputs[14].value.replace(/\s/g, '');
+        palavraCruz = palavraCruz.split("");
+        var a = 0;
+        for (let i = 4; i == 4; i++) {
+            document.querySelector(`div#l3Block${i}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l3Block${i}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i2 = 4; i2 == 4; i2++) {
+            document.querySelector(`div#l4Block${i2}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l4Block${i2}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i3 = 4; i3 == 4; i3++) {
+            document.querySelector(`div#l5Block${i3}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l5Block${i3}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i4 = 4; i4 == 4; i4++) {
+            document.querySelector(`div#l6Block${i4}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l6Block${i4}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i5 = 4; i5 == 4; i5++) {
+            document.querySelector(`div#l7Block${i5}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l7Block${i5}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i6 = 4; i6 == 4; i6++) {
+            document.querySelector(`div#l8Block${i6}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l8Block${i6}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i7 = 4; i7 == 4; i7++) {
+            document.querySelector(`div#l9Block${i7}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l9Block${i7}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i8 = 4; i8 == 4; i8++) {
+            document.querySelector(`div#l10Block${i8}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l10Block${i8}`).style.backgroundColor = "rgb(87, 255, 104)";
+            inputs[14].disabled = true;
+            sum15.style.textDecoration = "line-through";
+            det15.removeAttribute("open");
+            a++;
         }
     }
     if (inputs[15].value.toLowerCase() == rFim[15]) {
         var palavraCruz = inputs[15].value.replace(/\s/g, '');
-        console.log(palavraCruz);
         palavraCruz = palavraCruz.split("");
-        console.log(palavraCruz);
         var a = 0;
         for (let i = 1; i <= 8; i++) {
             document.querySelector(`div#l3Block${i}`).innerText = palavraCruz[a];
@@ -403,13 +653,79 @@ function verificar() {
         }
     }
     if (inputs[16].value.toLowerCase() == rFim[16]) {
-        for (let i = 1; i < inputs[16].value.length; i++) {
-            // document.querySelector(`div#l8Block${i}`).style.backgroundColor = "red";
+        var palavraCruz = inputs[16].value.replace(/\s/g, '');
+        palavraCruz = palavraCruz.split("");
+        var a = 0;
+        for (let i = 14; i == 14; i++) {
+            document.querySelector(`div#l4Block${i}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l4Block${i}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i2 = 14; i2 == 14; i2++) {
+            document.querySelector(`div#l5Block${i2}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l5Block${i2}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i3 = 14; i3 == 14; i3++) {
+            document.querySelector(`div#l6Block${i3}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l6Block${i3}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i4 = 14; i4 == 14; i4++) {
+            document.querySelector(`div#l7Block${i4}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l7Block${i4}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i5 = 14; i5 == 14; i5++) {
+            document.querySelector(`div#l8Block${i5}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l8Block${i5}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i6 = 14; i6 == 14; i6++) {
+            document.querySelector(`div#l9Block${i6}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l9Block${i6}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i7 = 14; i7 == 14; i7++) {
+            document.querySelector(`div#l10Block${i7}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l10lock${i7}`).style.backgroundColor = "rgb(87, 255, 104)";
+            inputs[15].disabled = true;
+            sum16.style.textDecoration = "line-through";
+            det16.removeAttribute("open");
+            a++;
         }
     }
     if (inputs[17].value.toLowerCase() == rFim[17]) {
-        for (let i = 1; i < inputs[17].value.length; i++) {
-            // document.querySelector(`div#l8Block${i}`).style.backgroundColor = "red";
+        var palavraCruz = inputs[17].value.replace(/\s/g, '');
+        palavraCruz = palavraCruz.split("");
+        var a = 0;
+        for (let i = 9; i == 9; i++) {
+            document.querySelector(`div#l4Block${i}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l4Block${i}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i2 = 9; i2 == 9; i2++) {
+            document.querySelector(`div#l5Block${i2}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l5Block${i2}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i3 = 9; i3 == 9; i3++) {
+            document.querySelector(`div#l6Block${i3}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l6Block${i3}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i4 = 9; i4 == 9; i4++) {
+            document.querySelector(`div#l7Block${i4}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l7Block${i4}`).style.backgroundColor = "rgb(87, 255, 104)";
+            a++
+        }
+        for (let i5 = 9; i5 == 9; i5++) {
+            document.querySelector(`div#l8Block${i5}`).innerText = palavraCruz[a];
+            document.querySelector(`div#l8Block${i5}`).style.backgroundColor = "rgb(87, 255, 104)";
+            inputs[17].disabled = true;
+            sum18.style.textDecoration = "line-through";
+            det18.removeAttribute("open");
+            a++;
         }
     }
 } 

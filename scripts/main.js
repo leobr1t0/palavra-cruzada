@@ -291,15 +291,10 @@ function verificar() {
         for (let i12 = 11; i12 == 11; i12++) {
             document.querySelector(`div#l13Block${i12}`).innerText = palavraCruz[a];
             document.querySelector(`div#l13Block${i12}`).style.backgroundColor = "rgb(87, 255, 104)";
-            a++
-        }
-        for (let i3 = 11; i3 == 11; i3++) {
-            document.querySelector(`div#l14Block${i3}`).innerText = palavraCruz[a];
-            document.querySelector(`div#l14Block${i3}`).style.backgroundColor = "rgb(87, 255, 104)";
             inputs[2].disabled = true;
             sum3.style.textDecoration = "line-through";
             det3.removeAttribute("open");
-            a++;
+            a++
         }
 
     }
@@ -326,8 +321,8 @@ function verificar() {
     if (inputs[7].value.toLowerCase() == rFim[7]) {
         var palavraCruz = inputs[7].value.replace(/\s/g, '');
         palavraCruz = palavraCruz.split("");
-        var a = 0;
-        for (let i = 1; i < inputs[7].value.length; i++) {
+        let a = 0;
+        for (let i = 1; i <= 14; i++) {
             document.querySelector(`div#l8Block${i}`).innerText = palavraCruz[a];
             document.querySelector(`div#l8Block${i}`).style.backgroundColor = "rgb(87, 255, 104)";
             inputs[7].disabled = true;
@@ -343,7 +338,7 @@ function verificar() {
         for (let i = 7; i <= 9; i++) {
             document.querySelector(`div#l5Block${i}`).innerText = palavraCruz[a];
             document.querySelector(`div#l5Block${i}`).style.backgroundColor = "rgb(87, 255, 104)";
-            inputs[9].disabled = true;
+            inputs[8].disabled = true;
             sum9.style.textDecoration = "line-through";
             det9.removeAttribute("open");
             a++;

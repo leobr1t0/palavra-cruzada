@@ -756,11 +756,11 @@ function verificar() {
     }
     if (q1 == true && q2 == true && q3 == true && q4 == true && q5 == true && q6 == true && q7 == true && q8 == true && q9 == true && q10 == true && q11 == true && q12 == true && q13 == true && q14 == true && q15 == true && q16 == true && q17 == true && q18 == true) {
         Swal.fire({
-            imageUrl: 'https://media.tenor.com/Zg4IASBSaUEAAAAd/cat.gif',
+            imageUrl: 'https://media.tenor.com/fwFci6Y5wyQAAAAC/yagi-toshinori.gif',
             imageHeight: 200,
             title: 'Parabéns',
-            text: 'Parabéns, você acertou todas questões da cruzadinha',
-            confirmButtonText: 'Parabéns',
+            text: 'Você acertou todas questões da cruzadinha!',
+            confirmButtonText: 'Obrigado(a)',
             showClass: {
                 popup: 'animate__animated animate__fadeInDown'
             },

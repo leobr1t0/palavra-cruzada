@@ -224,6 +224,6 @@ details[open] summary {
     justify-content: center;
 }
 
-#number {
-    display: none;
+small {
+    font-size: 10px;
 }

@@ -46,7 +46,7 @@ function criaInputs() {
     // for (let i = 0; i < 1; i++) {
     for (var indexLn1 = 1; indexLn1 <= 15; indexLn1++) {
         if (indexLn1 == 11) {
-            box_Cruz.innerHTML += `<div class="block_white" id="l1Block${indexLn1}"></div>`;
+            box_Cruz.innerHTML += `<div class="block_white" id="l1Block${indexLn1}"><small>3</small></div>`;
         }
         else {
             box_Cruz.innerHTML += `<div class="block_black"></div>`;
@@ -70,7 +70,9 @@ function criaInputs() {
     // for (let i = 0; i < 1; i++) {
     for (var indexLn3 = 1; indexLn3 <= 15; indexLn3++) {
         if (indexLn3 == 1) {
-            box_Cruz3.innerHTML += `<div class="block_white" id="l3Block${indexLn3}"><small>16</small</div>`;
+            box_Cruz3.innerHTML += `<div class="block_white" id="l3Block${indexLn3}"><small>16</small></div>`;
+        } else if (indexLn3 == 4) {
+            box_Cruz3.innerHTML += `<div class="block_white" id="l3Block${indexLn3}"><small>15</small></div>`;
         } else if (indexLn3 == 1 || indexLn3 == 2 || indexLn3 == 3 || indexLn3 == 4 || indexLn3 == 5 || indexLn3 == 6 || indexLn3 == 7 || indexLn3 == 8 || indexLn3 == 11) {
             box_Cruz3.innerHTML += `<div class="block_white" id="l3Block${indexLn3}"></div>`;
         }
@@ -83,7 +85,11 @@ function criaInputs() {
     // 4° Linha
     // for (let i = 0; i < 1; i++) {
     for (var indexLn4 = 1; indexLn4 <= 15; indexLn4++) {
-        if (indexLn4 == 4 || indexLn4 == 9 || indexLn4 == 11 || indexLn4 == 14) {
+        if (indexLn4 == 14) {
+            box_Cruz4.innerHTML += `<div class="block_white" id="l4Block${indexLn4}"><small>17</small></div>`;
+        } else if (indexLn4 == 9) {
+            box_Cruz4.innerHTML += `<div class="block_white" id="l4Block${indexLn4}"><small>18</small></div>`;
+        } else if (indexLn4 == 4 || indexLn4 == 9 || indexLn4 == 11 || indexLn4 == 14) {
             box_Cruz4.innerHTML += `<div class="block_white" id="l4Block${indexLn4}"></div>`;
         }
         else {
@@ -95,7 +101,11 @@ function criaInputs() {
     // 5° Linha
     // for (let i = 0; i < 1; i++) {
     for (var indexLn5 = 1; indexLn5 <= 15; indexLn5++) {
-        if (indexLn5 == 7) {
+        if (indexLn5 == 12) {
+            box_Cruz5.innerHTML += `<div class="block_white" id="l5Block${indexLn5}"><small>7</small></div>`;
+        } else if (indexLn5 == 2) {
+            box_Cruz5.innerHTML += `<div class="block_white" id="l5Block${indexLn5}"><small>11</small></div>`;
+        } else if (indexLn5 == 7) {
             box_Cruz5.innerHTML += `<div class="block_white" id="l5Block${indexLn5}"><small>9, 12</small</div>`;
         } else if (indexLn5 == 2 || indexLn5 == 4 || indexLn5 == 8 || indexLn5 == 9 || indexLn5 == 11 || indexLn5 == 12 || indexLn5 == 14) {
             box_Cruz5.innerHTML += `<div class="block_white" id="l5Block${indexLn5}"></div>`;
@@ -131,8 +141,12 @@ function criaInputs() {
     // 8° Linha
     // for (let i = 0; i < 1; i++) {
     for (var indexLn8 = 1; indexLn8 <= 15; indexLn8++) {
-        if (indexLn8 == 1) {
-            box_Cruz8.innerHTML += `<div class="block_white" id="l8Block${indexLn8}"><small>8</small</div>`;
+        if (indexLn8 == 5) {
+            box_Cruz8.innerHTML += `<div class="block_white" id="l8Block${indexLn8}"><small>4, 5</small></div>`;
+        } else if (indexLn8 == 1) {
+            box_Cruz8.innerHTML += `<div class="block_white" id="l8Block${indexLn8}"><small>8</small></div>`;
+        } else if (indexLn8 == 6) {
+            box_Cruz8.innerHTML += `<div class="block_white" id="l8Block${indexLn8}"><small>13, 14</small></div>`;
         } else if (indexLn8 == 9) {
             box_Cruz8.innerHTML += `<div class="block_white" id="l8Block${indexLn8}"><small>6</small></div>`;
         } else if (indexLn8 == 15) {
@@ -159,7 +173,7 @@ function criaInputs() {
     // for (let i = 0; i < 1; i++) {
     for (var indexLn10 = 1; indexLn10 <= 15; indexLn10++) {
         if (indexLn10 == 13) {
-            box_Cruz10.innerHTML += `<div class="block_white" id="l10Block${indexLn10}"><small>1</small</div>`;
+            box_Cruz10.innerHTML += `<div class="block_white" id="l10Block${indexLn10}"><small>1, 10</small</div>`;
         } else if (indexLn10 == 2 || indexLn10 == 4 || indexLn10 == 5 || indexLn10 == 7 || indexLn10 == 9 || indexLn10 == 11 || indexLn10 == 13 || indexLn10 == 14) {
             box_Cruz10.innerHTML += `<div class="block_white" id="l10Block${indexLn10}"></div>`;
         } else {
@@ -182,7 +196,9 @@ function criaInputs() {
     // 12° Linha
     // for (let i = 0; i < 1; i++) {
     for (var indexLn12 = 1; indexLn12 <= 15; indexLn12++) {
-        if (indexLn12 == 2 || indexLn12 == 9 || indexLn12 == 11 || indexLn12 == 13 || indexLn12 == 14 || indexLn12 == 15) {
+        if (indexLn12 == 13) {
+            box_Cruz12.innerHTML += `<div class="block_white" id="l12Block${indexLn12}"><small>2</small></div>`;
+        } else if (indexLn12 == 2 || indexLn12 == 9 || indexLn12 == 11 || indexLn12 == 13 || indexLn12 == 14 || indexLn12 == 15) {
             box_Cruz12.innerHTML += `<div class="block_white" id="l12Block${indexLn12}"></div>`;
         } else {
             box_Cruz12.innerHTML += `<div class="block_black"></div>`;

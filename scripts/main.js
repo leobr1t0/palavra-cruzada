@@ -793,6 +793,10 @@ function verificar() {
       left top
       no-repeat
       `
-        });
+        }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.reload();
+        }
+      });
     }
-} 
+};
